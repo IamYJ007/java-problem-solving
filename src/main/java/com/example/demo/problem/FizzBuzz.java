@@ -3,6 +3,7 @@ package com.example.demo.problem;
 import java.util.stream.IntStream;
 
 public class FizzBuzz {
+
     public static void main(String[] args) {
         fizzBuzzUsingJava8(40);
         usingJava(10);
@@ -28,4 +29,5 @@ public class FizzBuzz {
                 .mapToObj(i -> i % 3 == 0 ? (i % 5 == 0 ? "FizzBuzz" : "Fizz") : (i % 5 == 0 ? "Buzz" : i))
                 .forEach(System.out::println);
     }
+
 }
